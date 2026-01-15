@@ -1,0 +1,176 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box; /* กำหนดให้กล่องไม่บานเวลาใส่ padding border */
+  font-family: 'Kanit', Arial, sans-serif; /* กำหนดฟอนต์ทั้งหมดในเว็บ */
+}/* สำหรับกำหนดทุกให้คลอบคลุมทั้งหมด */
+
+body{
+  background:#f4f9f6;
+  color:#1f2933;
+}
+
+header{
+  background:linear-gradient(135deg,#0f766e,#22c55e);/* พื้นหลัง */
+  color:#fff;/* สีอักษร */
+  text-align:center;
+  padding:50px 20px; /* ขนาด */
+}
+
+.profile-img{
+  width: 500px;
+  height:500px;
+  object-fit:contain; /* ทำให้เนื้อหา พอดีกล่องทั้งหมด */
+  border-radius:50%; /* มุมโค้งภาพ */
+  margin-bottom:15px; 
+}
+
+nav{
+  background:#064e3b;
+  position:sticky; /* ทำให้แถบไม่หายไปเวลาเลื่อนลง */
+  top:0;
+}
+
+nav ul{
+  display:flex; /* ที่ใช้จัดวาง element */
+  justify-content:center; /* จัดกลาง */
+  list-style:none; /* ลบสัญลักษณ์หน้ารายการ ul ol */
+  flex-wrap:wrap;/* ถ้าของใน Flex เต็มแถว ให้ขึ้นบรรทัดใหม่อัตโนมัติ */
+}
+
+nav li{
+  margin:10px 15px; /* กำหยดขอบ */
+}
+
+nav a{
+  color:#ecfdf5;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{/* เวลาเอาเมาส์ชี้จะเปลี่ยนสี */
+  color:#86efac;
+}
+
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+section h2{
+  color:#065f46;
+  margin-bottom:20px;
+  border-left:6px solid #22c55e;
+  padding-left:12px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08); /* เงาของcard */
+}
+
+.placeholder{
+  color:#6b7280;
+  
+}
+
+footer{
+  background:#064e3b;
+  color:#ecfdf5;
+  text-align:center;
+  padding:20px;
+}
+
+/* table{
+  margin: 0;
+  gap: 1px;
+  text-align: center;
+} */
+
+.training-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* จัด collum roll อัตโนมัต และกำหนดขนาดสูงสุด */
+  gap:25px;
+}
+
+.training-card{
+  background:#fff;
+  border-radius:16px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:0.3s ease;  /* กำหนดให้ขยับเวลาเอาเมาส์ไปชี้ ใช้กับ transform */
+}
+
+.training-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.training-card img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.training-card h3{
+  margin-top:12px;
+  font-size:1rem;
+  color:#065f46;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.experience-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:25px;
+}
+
+.experience-card{
+  background:#fff;
+  border-radius:16px;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+}
+
+.experience-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.experience-card img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.experience-card h3{
+  margin-top:12px;
+  font-size:1rem;
+  color:#065f46;
+}
+
+.experience-card p{
+  margin-top:12px;
+  font-weight: bold;
+}
+
+.experience-card .place{
+  font-weight:bold;
+  color:#047857;
+}
+
+.experience-card .time{
+  font-size:0.9rem;
+  color:#6b7280;
+  margin-bottom:10px;
+}
