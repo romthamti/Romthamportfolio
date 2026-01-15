@@ -5,6 +5,15 @@
   font-family: 'Kanit', Arial, sans-serif; /* กำหนดฟอนต์ทั้งหมดในเว็บ */
 }/* สำหรับกำหนดทุกให้คลอบคลุมทั้งหมด */
 
+/* มือถือ */
+@media (max-width: 576px) {}
+
+/* แท็บเล็ต */
+@media (max-width: 768px) {}
+
+/* โน้ตบุ๊ก */
+@media (max-width: 992px) {}
+
 body{
   background:#f4f9f6;
   color:#1f2933;
