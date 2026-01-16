@@ -189,3 +189,7 @@ footer p{
   border-radius:12px;
   font-weight: bold;
 }
+
+.card-placeholder a:hover{
+  color: red;
+}
