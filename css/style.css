@@ -200,3 +200,33 @@ footer p{
   border-radius:12px;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
+
+/* ===== ตกแต่งภาพตอนขยาย ===== */
+#lightbox{
+  position:fixed;/* ติดหน้าจอแม้เลื่อน */
+  top:0;
+  left:0;
+  width:100%;/* เต็มจอ */
+  height:100%;/* เต็มจอ */
+  background:rgba(0,0,0,0.85);/* พื้นหลังดำโปร่ง */
+  display:none;/* ซ่อนตอนยังไม่คลิก */
+  justify-content:center;/* จัดภาพกลางจอ */
+  align-items:center;/* จัดภาพกลางจอ */
+  z-index:9999;/*อยู่หน้าทุกอย่าง */
+}
+
+#lightbox img{/* รูปที่ขยาย */
+  max-width:90%;
+  max-height:90%;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+#close{ /* ปุ่มปิด */
+  position:absolute;
+  top:20px;
+  right:30px;
+  font-size:40px;
+  color:white;
+  cursor:pointer;
+}
